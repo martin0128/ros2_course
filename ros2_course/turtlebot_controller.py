@@ -23,7 +23,7 @@ class ObstacleAvoidance(Node):
         ranges = data.ranges
 
         # Calculate the minimum range value
-        front = min(min(ranges[:15]), min(ranges[-15:]))
+        front = min(min(ranges[:20]), min(ranges[-20:]))
 
         # Initialize the robot's velocity command
         cmd_vel = Twist()
